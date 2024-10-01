@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">      
+	<title></title>
+</head>
+<body>
+
+<audio id="sound" src="Dodge.mp3" type="audio/mp3"></audio>
+<div class="container c1">
+    <h1>Welcome to Car Enthusiast Hub</h1>
+    <div class="icons">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-video"></i>
+        <i class="fa-solid fa-gas-pump"></i>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</div>
+<div class="container c2">
+    <div class="card1">
+        <div>Dodge <span class="redtext">SRT</span> Hellcat</div>
+        <image class="i1" src="images/mp1.jpeg"></image>
+    </div>
+    <div class="card2">
+        <div>• Experience the thrill of the <span class="redtext">Dodge SRT Hellcat</span>, known for its raw power and unmistakable design.</div>
+        <div>• With a supercharged <span class="redtext">6.2L</span> HEMI <span class="redtext">V8</span> engine, this beast delivers <span class="redtext">707</span> horsepower, blending retro muscle car vibes with modern performance technology.</div>
+        <div>• Whether you’re on the track or the road, the <span class="redtext">Hellcat</span> is guaranteed to turn heads.</div>
+    </div>
+    <div class="card3">
+        <image class="i3" src="images/mp2.jpeg" onmouseover="playsound()" onmouseout="stopsound()"></image>
+        <div class="start" onmouseover="playsound()" onmouseout="stopsound()">StartEngine <i class="fa-solid fa-key"></i></div>
+    </div>
+</div>
+<div class="container c3">
+    <img src="images/logo.jpeg" />
+    <div><span class="redtext">Join the Community: </span>Become part of a community of car enthusiasts where you can share your passion, participate in discussions, and showcase your own rides. Whether you love to tinker under the hood or appreciate cars for their aesthetics, this is the place for you.</div>
+</div>
+
+
+
+<script type="text/javascript">
+    var audio = document.getElementById("sound");
+    function playsound(){
+        audio.play();
+    }
+    function stopsound(){
+        audio.pause();
+        audio.currentTime = 0;
+    }
+</script>
+</body>
+</html>
